@@ -1,4 +1,11 @@
 console.log("Index Page");
-// we are just importing the funcanality of add.js in index js with th help of require function
-//  In this case we can only use the funcanality and value defined in add.js but cannot control the value of add.js
-const fs = require("./add");
+// In line number 3 we are importing exposed funcanality from add.js file
+const add = require("./add");
+
+// in line number 6 we are passing value for exposed funcancality as our requirment for index page
+const sum = add(25, 25);
+
+// we can pass value as our requirment in add funcanality
+const sum2 = add(50, 50);
+console.log(sum);
+console.log(sum2);
