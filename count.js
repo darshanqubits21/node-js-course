@@ -1,10 +1,10 @@
 //
 let oddNumber = 1;
 
-exports.oddNumber = () => {
+module.exports.oddNumber = () => {
   oddNumber++;
 };
 
-exports.myOddNumber = () => {
+module.exports.myOddNumber = () => {
   return oddNumber;
 };
